@@ -19,6 +19,11 @@
                         <a class="nav-link" href="{{ url_for('registrarse.home_register') }}">Registrarse</a>
                     </li>
                 {% else %}
+                    {% if session.get('is_admin') %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('administrador.dashboard') }}">Dashboard</a>
+                        </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('perfil.mostrar_perfil') }}">Perfil</a>
                     </li>

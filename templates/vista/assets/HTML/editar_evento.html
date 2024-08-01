@@ -1,0 +1,19 @@
+{% extends "vista/assets/HTML/base.html" %}
+
+{% block title %}Editar Evento{% endblock %}
+
+{% block content %}
+    <h1>Editar Evento</h1>
+    {% set action_url = url_for('administrador.editar_evento', id=evento.id) %}
+    {% set button_text = 'Actualizar Evento' %}
+    {% set nombre = evento.nombre %}
+    {% set descripcion = evento.descripcion %}
+    {% set autores = evento.autores %}
+    {% set responsables = evento.responsables %}
+    {% set resumen = evento.resumen %}
+    {% set datos = evento.datos %}
+    {% set conclusion = evento.conclusion %}
+    {% set num_pag = evento.num_pag %}
+    
+    {% include 'vista/assets/HTML/form_evento.html' %}
+{% endblock %}

@@ -5,5 +5,6 @@ def agregar_evento(evento):
     db.session.add(evento)
     db.session.commit()
 
+
 class EventoRepositorioImpl():
     pass
