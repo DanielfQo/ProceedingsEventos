@@ -5,7 +5,7 @@ Este proyecto tiene como objetivo desarrollar un sistema de publicación de proc
 
 ## Funcionalidades
 ### Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](https://github.com/DanielfQo/ProceedingsEventos/edit/desarrollo/diagrama.jpeg)
+![Diagrama de Casos de Uso](https://github.com/DanielfQo/ProceedingsEventos/blob/main/diagrama.jpeg)
 
 ### Funcionalidades de Alto Nivel
 - **Registrar Usuarios:** Permitir el registro de nuevos usuarios en el sistema.
@@ -25,11 +25,11 @@ Este proyecto tiene como objetivo desarrollar un sistema de publicación de proc
 
 ## Modelo de Dominio
 ### Diagrama de Clases y Módulos
-![Diagrama de Clases](https://github.com/DanielfQo/ProceedingsEventos/edit/desarrollo/diagramaClases.jpeg)
+![Diagrama de Clases](https://github.com/DanielfQo/ProceedingsEventos/blob/main/diagramaClases.jpeg)
 
 ## Arquitectura y Patrones
 ### Diagrama de Componentes o Paquetes
-![Diagrama de Componentes](https://github.com/DanielfQo/ProceedingsEventos/edit/desarrollo/diagramaComponentes.jpeg)
+![Diagrama de Componentes](https://github.com/DanielfQo/ProceedingsEventos/blob/main/diagramaComponentes.jpeg)
 
 ## Prácticas de Codificación Limpia Aplicadas
 ### Descripción y Fragmento de Código (evidencia)
