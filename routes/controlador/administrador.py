@@ -6,6 +6,7 @@ from utils.repositorios.sqlAlchemy.conexionBd import db
 from models.documentos.FabricaDocumento import FabricaDocumento
 
 administrador = Blueprint('administrador', __name__, template_folder='../templates/vista/HTML')
+
 @administrador.route('/dashboard', methods=['GET'])
 def dashboard():
     eventos = Evento.query.all()
@@ -51,8 +52,8 @@ def crear_evento():
 
 @administrador.route('/crear_evento_form', methods=['GET'])
 def crear_evento_form():
-    
     return render_template('vista/assets/HTML/crear_evento.html')
+
 @administrador.route('/editar_evento/<int:id>', methods=['GET', 'POST'])
 def editar_evento(id):
     evento = Evento.query.get_or_404(id)

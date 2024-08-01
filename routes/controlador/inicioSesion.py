@@ -14,6 +14,7 @@ def login():
         
         if servicio_usuario.loggear_usuario(email, contrasenia):
             session['usuario_id'] = servicio_usuario.obtener_id_usuario()
+            print(servicio_usuario.es_admin())
             if servicio_usuario.es_admin():
                 return redirect(url_for('administrador.dashboard'))
             else:

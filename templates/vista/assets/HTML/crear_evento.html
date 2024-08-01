@@ -4,7 +4,7 @@
 
 {% block content %}
     <h1 class="mb-4">Crear Evento</h1>
-    {% set action_url = 'administrador.crear_evento' %}
+    {% set action_url = url_for('administrador.crear_evento') %}
     {% set button_text = 'Crear Evento' %}
     {% set nombre = '' %}
     {% set descripcion = '' %}
