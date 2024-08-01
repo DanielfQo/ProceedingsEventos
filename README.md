@@ -149,5 +149,7 @@ def verificar_usuario_bd(usuario):
 #### Arquitectura en Capas:
 El sistema sigue una arquitectura en capas que incluye Presentación, Servicios, Dominio y Repositorios, asegurando una separación clara de responsabilidades y facilitando el mantenimiento y escalabilidad del sistema.
 
+## Estilos de programacion
+
 
 
