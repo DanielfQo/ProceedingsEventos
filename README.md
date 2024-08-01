@@ -203,7 +203,7 @@ class Usuario(db.Model):
 
 ### Cookbook
 
-La base de datos se comporta como un singleton
+La base de datos es una variable global
 
 ```python
 
