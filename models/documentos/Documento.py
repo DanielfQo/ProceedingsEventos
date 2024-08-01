@@ -2,7 +2,7 @@
 from utils.repositorios.sqlAlchemy.conexionBd import db
 
 class Documento(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, nullable=True)
     resumen = db.Column(db.Text, nullable=False)
     datos = db.Column(db.Text, nullable=False)
     conclusion = db.Column(db.Text, nullable=False)
