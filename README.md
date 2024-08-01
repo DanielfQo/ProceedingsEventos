@@ -211,3 +211,11 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 ```
+### Persistant-Tables
+Estamos modelando tablas, que en algunos casos tienen relaciones.
+class Usuario(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nombres = db.Column(db.String(80))
+    apellidos = db.Column(db.String(80))
+    email = db.Column(db.String(120))
+    contrasenia = db.Column(db.String(120))
