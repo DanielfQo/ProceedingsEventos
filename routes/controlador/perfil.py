@@ -28,7 +28,8 @@ def actualizar_perfil():
         # Actualiza la información del usuario con los datos del formulario
         usuario.nombres = request.form.get('nombres')
         usuario.apellidos = request.form.get('apellidos')
-        usuario.fecha_nacimiento = request.form.get('fecha_nacimiento')
+        fecha_nacimiento = request.form.get('fecha_nacimiento')
+        usuario.fecha_nacimiento = fecha_nacimiento if fecha_nacimiento else None
         usuario.nacionalidad = request.form.get('nacionalidad')
         # Añadir código aquí para actualizar otros campos si es necesario
         db.session.commit()
@@ -36,3 +37,4 @@ def actualizar_perfil():
         return redirect(url_for('perfil.mostrar_perfil'))
     else:
         return "Usuario no encontrado", 404
+
