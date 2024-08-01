@@ -145,7 +145,15 @@ def verificar_usuario_bd(usuario):
     usuario_db = db.session.query(Usuario).filter_by(nombres=usuario.nombres, apellidos=usuario.apellidos, email=usuario.email).first()
     return usuario_db is None
 ```
-    
+#### Fabricas:
+```python
+class FabricaUsuario:
+    @staticmethod
+    def crear_usuario(nombres, apellidos, email, contrasenia, es_admin=False):
+        contrasenia_hashed = generate_password_hash(contrasenia)
+        return Usuario(nombres=nombres, apellidos=apellidos, email=email, contrasenia=contrasenia_hashed, es_admin=es_admin)
+```
+
 #### Arquitectura en Capas:
 El sistema sigue una arquitectura en capas que incluye Presentación, Servicios, Dominio y Repositorios, asegurando una separación clara de responsabilidades y facilitando el mantenimiento y escalabilidad del sistema.
 
