@@ -54,7 +54,7 @@ def crear_evento():
 def crear_evento_form():
     return render_template('vista/assets/HTML/crear_evento.html')
 
-@administrador.route('/editar_evento/<int:id>', methods=['GET', 'POST'])
+@administrador.route('/editar_evento/<int:id>', methods=['POST'])
 def editar_evento(id):
     evento = Evento.query.get_or_404(id)
     if request.method == 'POST':
